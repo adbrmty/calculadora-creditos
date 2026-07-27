@@ -74,12 +74,18 @@ python3 -m http.server 8000
 
 ## Cómo publicar en GitHub Pages
 
-1. Copia `calculadora-compra.html` a la raíz del repositorio.
-2. Haz commit y push a la rama que sirve Pages (`main` o `gh-pages`).
-3. En **Settings → Pages**, confirma la rama y la carpeta `/ (root)`.
-4. La URL queda como `https://<usuario>.github.io/<repositorio>/calculadora-compra.html`.
+La herramienta se publica como subpágina del sitio principal `https://adbrmty.github.io/`.
 
-Funciona igual desde una subruta: no hay rutas absolutas al dominio ni referencias locales.
+**URL destino:** `https://adbrmty.github.io/calculadora-creditos/`
+
+1. En el repositorio `adbrmty.github.io`, crea la carpeta `calculadora-creditos/`.
+2. Copia el archivo dentro con el nombre **`index.html`** (así la URL queda limpia, sin el nombre de archivo).
+3. Haz commit y push a la rama que sirve Pages.
+4. Verifica en `https://adbrmty.github.io/calculadora-creditos/`.
+
+Si prefieres un repositorio aparte, publícalo con Pages y ajusta el `canonical` y `og:url` del `<head>`.
+
+**Navegación:** el logotipo del encabezado y el botón "Inicio" apuntan a `https://adbrmty.github.io/`. Si el dominio cambia, actualiza ambos (busca `brand-link` y `btn-inicio`) junto con el `canonical`.
 
 **Después de publicar, verifica:** que carguen las tipografías y las gráficas, que el logotipo se vea en el encabezado, que el botón de WhatsApp abra la conversación y que la vista previa de impresión muestre el encabezado con logo y fecha.
 
